@@ -1,0 +1,127 @@
+<section>
+    <div class="header">
+        <a [routerLink]="['/dash']" class="logo">Cart Items</a>
+        <div class="header-right">
+    
+            <a [routerLink]="['/list']" class="logo">list</a>
+        </div>
+    
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <script>
+          angular.module('myApp', [])
+            .controller('myCtrl', ['$scope', function($scope) {
+              $scope.count = 0;
+              $scope.myFunc = function() {
+                $scope.count++;
+              };
+            }]);
+        </script>
+<h1 style="text-align:center">Cart Items</h1>
+
+<div class="cart">
+  <!--label-->
+    <div class = "label">
+      <label class = "img">Image</label>
+      <label class = "description">Description</label>
+      <label class = "price">Price</label>
+      <label class = "amount">Amount</label>
+
+    
+    </div>
+<div>
+  
+    <!--First product-->
+  <div class="item" ng-app="myApp" ng-controller="myCtrl">
+    <div class="img">
+        <img src="../assets/img/poco.jpg">
+    </div>
+
+    <div class="description">
+
+     
+ <div class="itemtitle">Mi POCO</div>
+ <p class="itemdescription">Qualcomm® Snapdragon™ 845 
+     Flagship processor with AIE 845
+     
+     POCO F1 runs on the Qualcomm® Snapdragon™ 845 mobile platform, meaning you get Snapdragon's powerful AI engine on their most advanced flagship 10nm class chip. Enjoy unbeatable performance and lower power consumption. </p>
+</div>
+    <form id="formNewUser" name="formNewUser" #userData = "ngForm" (ngSubmit) = "addNewUser(userData.value)">
+
+    <div class="price">{{m}}</div>
+    <div class="amount" >
+      <input type="number" name ="q" id="q" value="1" min="0" max="10" ngModel/>
+    </div>
+    <input type="submit" value="place order"  class ="confirm" role="button">
+    </form>
+
+  </div>
+ 
+  <br/>
+  </div>
+
+  <!--Secound product-->
+  <!--
+  <div class="item">
+      <div class="img">
+        <br/>
+        <img src="../assets/sam-9.jpg">
+      </div>
+  
+      <div class="description">
+  
+        <div class="itemtitle">Samsung Galaxy Note 9</div>
+        <p class="itemdescription">The Samsung Galaxy Note 9 is powered by 1.7GHz octa-core processor and it comes with 6GB of RAM. The phone packs 128GB of internal storage that can be expanded up to 512GB via a microSD card. As far as the cameras are concerned, the Samsung Galaxy Note 9 packs a 12-megapixel primary camera on the rear and a 8-megapixel front shooter for selfies. </p>
+      </div>
+  
+      <div class="price">56000</div>
+      <div class="amount">
+        <input type="number" value="1" min="1">
+      </div>
+     
+      <div class="total">56000</div>
+    </div>
+
+
+ 
+    <script type="text/javascript">
+        var app = angular.module('MyApp', [])
+        app.controller('MyController', function ($scope, $window) {
+            $scope.ShowConfirm = function () {
+                if ($window.confirm("Can we place the order")) {
+                    $scope.Message = "OK";
+                } else {
+                    $scope.Message = "Discard.";
+                }
+            }
+        });
+    </script>
+
+
+  <div class="totals">
+    
+      <div class="totalsitem">
+         <label>Total Amount:</label> 
+        <label>Subtotal</label>
+        <div class="totalsvalue" id="cart-subtotal">{{m| number:0}}</div>
+      </div>
+      <div class="totalsitem">
+        <label>Tax (5%)</label>
+        <div class="totalsvalue" id="cart-tax">{{a| number:0}}</div>
+      </div>
+      <div class="totalsitem">
+        <label>Shipping</label>
+        <div class="totalsvalue" id="cart-shipping">{{b}}</div>
+      </div>
+      <div class="totalsitem totalsitemtotal">
+        <label>Grand Total</label>
+        <div class="totalsvalue" id="cart-total">{{c| number:0}}</div>
+      </div>
+    </div>
+    
+        <input  type="submit"  role="button" value="Place order" class="conform" />
+  -->
+</div>
+
+
+</section>

@@ -1,0 +1,47 @@
+<section>
+  
+    <div id="login" class="py-5 justify-content-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <img class="img-fluid d-block mx-auto" src="../assets/user.png" width="60px" height="60px"> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center ">
+    
+              <form [formGroup]='angForm' (ngSubmit)=submit() novalidate>
+    
+                <div class="form-group text-center">
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" autocomplete="on" class="form-control w-50 bg-light justify-content-center align-self-center mx-auto"
+                    placeholder="Enter email" formControlName="user">
+                  <small class="form-text text-muted text-center">We'll never share your email with anyone else.</small>
+                  <div *ngIf="angForm.controls['user'].invalid &&(angForm.controls['user'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['user'].errors.required">Name is required</div>
+                  </div>
+    
+    
+                </div>
+                <div class="form-group text-center">
+                  <label for="password" class="text-center">Password</label>
+                  <input type="password" id="password" autocomplete="on" class="form-control w-50 bg-light mx-auto" placeholder="Password"
+                    formControlName="pass">
+                  <div *ngIf="angForm.controls['pass'].invalid &&(angForm.controls['pass'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['pass'].errors.required">password is required</div>
+                  </div>
+                </div>
+                
+                  <input type="submit" name="sumbit" id="submit" class="btn btn-primary text-center" value="LOGIN ">
+              
+    
+              </form>
+            </div>
+          </div>
+          
+          
+          </div>
+      
+      </div>
+    
+    </section>
+ 

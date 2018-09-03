@@ -1,0 +1,132 @@
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+
+
+
+.cart {
+    margin-top: 45px;
+  }
+  .label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+ 
+color:black;
+width: 79%;
+
+  }
+  .img {
+    float: left;
+    width: 20%;
+  }
+ .description {
+    float: left;
+    width: 37%;
+  }
+  .price {
+    float: left;
+    width: 12%;
+  }
+   .amount {
+    float: left;
+    width: 10%;
+  }
+  .total {
+    float: left;
+    width: 12%;
+    text-align: right;
+  }
+
+  .item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+    
+  }
+  .item .img {
+    text-align: center;
+  }
+  .item .img img {
+    width: 200px;
+  }
+  .item .description .itemtitle {
+    margin-right: 20px;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  }
+  .item .description .itemdescription {
+    margin: 5px 20px 5px 0;
+    line-height: 1.4em;
+  }
+  .item .amount input {
+    width: 100px;
+  }
+  
+  .totals .totalsitem {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .totals .totalsitem label {
+    float: left;
+    clear: both;
+    width: 79%;
+    text-align: right;
+  }
+  .totals .totalsitem .totalsvalue {
+    float: right;
+    width: 21%;
+    text-align: right;
+  }
+
+  
+  .conform {
+    float: right;
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: #6b6;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+  }
+  
+  .conform:hover {
+    background-color: #494;
+  }
+  
